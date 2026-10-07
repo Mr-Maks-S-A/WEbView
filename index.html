@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Имя Фамилия — портфолио</title>
+  <meta name="description" content="Портфолио веб-разработчика: избранные проекты, навыки и контакты.">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">имя<span>.</span>dev</a>
+    <nav aria-label="Основная навигация">
+      <a href="#projects">Проекты</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contact">Контакты</a>
+      <button id="theme-toggle" class="icon-btn" aria-label="Переключить тему">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Веб-разработчик</p>
+      <h1>Создаю быстрые и аккуратные <em>веб-интерфейсы</em></h1>
+      <p class="lead">Привет! Я Имя Фамилия. Проектирую и разрабатываю сайты и веб-приложения — от идеи и дизайна до запуска.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">Смотреть проекты</a>
+        <a class="btn" href="#contact">Связаться</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Проекты</h2>
+      <div id="filters" class="filters" role="group" aria-label="Фильтр проектов"></div>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>Обо мне</h2>
+      <div class="about-grid">
+        <p>Расскажите здесь о себе: опыт, подход к работе, чем гордитесь. Пара абзацев — и этого достаточно.</p>
+        <ul class="skills" id="skills"></ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Контакты</h2>
+      <p>Открыт к интересным проектам и предложениям.</p>
+      <a class="btn primary" href="mailto:you@example.com">you@example.com</a>
+      <p class="socials">
+        <a href="https://github.com/Mr-Maks-S-A" rel="noopener">GitHub</a>
+        <a href="#" rel="noopener">Telegram</a>
+        <a href="#" rel="noopener">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="year"></span> Имя Фамилия</footer>
+
+  <dialog id="modal" class="modal" aria-labelledby="modal-title">
+    <button class="icon-btn close" id="modal-close" aria-label="Закрыть">✕</button>
+    <div id="modal-cover" class="cover"></div>
+    <div class="modal-body">
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <ul id="modal-tags" class="tags"></ul>
+      <p id="modal-links" class="links"></p>
+    </div>
+  </dialog>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
